@@ -1,4 +1,4 @@
-# intellect-react-task 1
+# Intellect-react-task 1
 
 Description:
 
