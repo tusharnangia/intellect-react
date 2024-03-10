@@ -5,11 +5,26 @@ Description:
 This React app is built as part of Intellect case study task/round for the position of Frontend Engineer Lead.
 The app includes 2 widgets:
 
-1. Circular Progress Bar Widget:
-   A circular progress bar widget that displays a percentage value (e.g., 5%).
+1. Circular Slider Widget:
+   
+   Description
+   The first widget consists of a circular slider with a numeric value inside. Users can adjust the slider to change the numeric value, and the circular bar around the circle will update accordingly. The     value range for this widget is 0 to 10.
 
-2. Slider Widget:
-   A slider widget that allows users to select a value within a specified range.
+   Implementation Steps
+   Component Creation: Create a React component for the circular slider.
+   Slider Logic: Implement the logic to handle slider changes and update the numeric value.
+   Circular Bar: Design the circular bar around the circle based on the slider value.
+   Styling: Apply appropriate styles to make the widget visually appealing.
+
+2. Bar Selector Widget:
+
+   Description
+   Allows users to select a bar on a scale. The range for this widget is 1 to 5.
+
+   Implementation Steps
+   Component Creation: Create a React component for the bar selector.
+   Bar Scale: Design the scale with five bars, each representing a value from 1 to 5.
+   User Interaction: Implement logic to allow users to select a bar.
 
 _________________________________________________________________________________________________________________________   
 
