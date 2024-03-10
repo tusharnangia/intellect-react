@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; 
+  width: 220px; 
+  height: 275px; 
+  border-radius: 10px; 
+  overflow: hidden;
+  background-color: #457482;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider-bar {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circular-progress {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card content */
+.container {
+  padding: 20px; /* Add some padding inside the card container */
 }
+
+.outer-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 60%;
+  background-color: transparent;
+  border: 3px dashed rgb(120, 172, 182);
+}
+
+.inner-circle {
+  background-color: #588493;
+  border-radius: 100%;
+}
+
+img {
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  opacity: 0.5;
+}
+
+.level-indicator {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.level-button {
+  background-color: #457482;
+  border-bottom: 20px solid rgb(136, 171, 173);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  border-radius: 20%;
+  transform: rotate(180deg);
+  margin: 3px;
+  height: 30px;
+}
+
+.level-1 {
+  width: 5%;
+}
+
+.level-2 {
+  width: 25%;
+}
+
+.level-3 {
+  width: 35%;
+}
+
+.level-4 {
+  width: 45%;
+}
+
+.level-5 {
+  width: 60%;
+}
+
+.level-button-clicked {
+  background-color: #457482;
+  border-bottom: 20px solid rgb(255, 255, 255);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  transform: rotate(180deg);
+  margin: 3px;
+  height: 30px;
+}
+
+
